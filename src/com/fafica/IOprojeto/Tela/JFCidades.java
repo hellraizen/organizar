@@ -132,10 +132,10 @@ public class JFCidades extends JFrame {
 	}
 
 	private String[] lerArquivoEntrada() throws IOException {
-		String caminho = JOptionPane.showInputDialog("Caminho Path Do Txt");
+		//String caminho = JOptionPane.showInputDialog("Caminho Path Do Txt");
 
 		LeituraArquivo ler = new LeituraArquivo();
-		String[] cidadesMatris = ler.leitura(caminho);
+		String[] cidadesMatris = ler.leitura();
 
 		return cidadesMatris;
 

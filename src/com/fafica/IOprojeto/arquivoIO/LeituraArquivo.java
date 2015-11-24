@@ -8,38 +8,40 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+
+
 
 public class LeituraArquivo {
 
-	Path path; 
-			
+	Path path = Paths
+			.get("C:/Users/Alternativo8/git/organizar/src/com/fafica/IOprojeto/txt/cidades.txt");
 	Charset utf8 = StandardCharsets.UTF_8;
 
-	public String[] leitura(String caminho ) throws IOException {
+	public String[] leitura( ) throws IOException {
 		
-		path =  Paths.get(caminho);
-		int contador = 0;
-		String[] dados ;
-
-		try (BufferedReader ler = Files.newBufferedReader(path, utf8)) {
-
-			String linha1 = null;
-			int index = -1;
-
-			while ((ler.readLine()) != null) {
-
-				contador++;
-
-			}
+	
+		ArrayList<String> arrayLocal = new ArrayList<String>();
+		
+		
+		try (BufferedReader ler = Files.newBufferedReader(path, utf8))  {
+			String linha = null;
+			while ((linha = ler.readLine())!= null ) {
 			
-			System.out.println(contador);
-		dados = new String[contador];
-			while ((linha1 = ler.readLine()) != null) {
+				System.out.println("cheguei aqui");
 
-			 dados[index++] = linha1;
-
+			String dado = linha;
+			
+			 arrayLocal.add(dado);
 			}
 		}
+		
+		String[] dados = new String[arrayLocal.size()];
+		int index=-1;
+		for (String string : arrayLocal) {
+			dados[++index]=string;
+		}
+		
 		return dados;
 	}
 
