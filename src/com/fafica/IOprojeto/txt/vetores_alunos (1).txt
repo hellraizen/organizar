@@ -1,0 +1,78 @@
+vetores - Exercício  1 - Percorrer todos os elementos de uma vetor de int e exibir a soma de seus valores
+
+Pergunta/Tarefa:
+
+Considere a seguinte vetor de inteiros:
+
+// uma vetor de inteiros contendo sete elementos
+int valores[] = {4, 5, 1, 8, 2, 2, 10};
+Escreva um programa Java console ou GUI que usa um laço for para percorrer todos os elementos desta vetor e exibir a soma de seus valores. 
+Seu programa deverá exibir uma saída com a mensagem:
+
+A soma dos valores da vetor é: 32 
+
+---------------------------------
+
+vetores - Exercício  2 - Percorrer todos os elementos de uma vetor, exibir a soma dos valores positivos e a quantidade de valores negativos
+
+Pergunta/Tarefa:
+
+Considere a seguinte vetor de inteiros:
+
+// uma vetor de inteiros contendo sete elementos
+int valores[] = {-3, 9, 12, -34, -2, 20, 10};
+Escreva um programa Java console ou GUI que usa um laço for para percorrer todos os elementos desta vetor e exibir a soma dos valores positivos e a quantidade de valores negativos. Seu programa deverá exibir uma saída com a mensagem:
+
+A soma dos valores positivos é: 51
+A quantidade de valores negativos é: 3 
+
+--------------------------
+
+vetores - Exercício  3 - Usando um laço for para percorrer os elementos de uma vetor e exibí-los na ordem original e invertidos
+
+Pergunta/Tarefa:
+
+Considere a seguinte vetor de inteiros:
+
+// uma vetor de inteiros contendo sete elementos
+int valores[] = {6, 9, 12, 34, 83, 20, 17};
+Escreva um programa Java console que usa um laço for para percorrer todos os elementos desta vetor duas vezes e exibí-los na ordem original e invertidos (somente na exibição, ou seja, não é necessário alterar a ordem dos elementos na vetor). 
+
+Seu programa deverá exibir a seguinte saída:
+
+Ordem original:
+
+6 9 12 34 83 20 17 
+
+Ordem inversa:
+
+17 20 83 34 12 9 6 
+
+------------------------------
+
+vetores - Exercício  4 - Verificando se um valor está contido em uma vetor
+
+Pergunta/Tarefa:
+
+Escreva um programa Java GUI ou console que declara, constrói e inicializa uma vetor de 5 inteiros. Em seguida peça ao usuário para informar um valor inteiro e informe se o valor lido está contido na vetor. A declaração, construção e inicialização da vetor pode ser feita da seguinte forma:
+
+// declara, constrói e inicializa uma vetor de 5 inteiros
+int valores[] = {4, 21, 8, 120, 1};
+Dica: Na resolução abaixo eu usei um objeto JOptionPane para ler o valor a ser pesquisado. Se preferir, use um objeto da classe Scanner para leitura.
+
+-----------------------------
+
+vatores - Exercício  5 - Declarar, construir e inicializar duas vetores de int e criar uma terceira vetor com os valores dos elementos sendo a soma dos elementos das duas vetores anteriores
+
+Pergunta/Tarefa:
+
+Considere as seguintes vetores:
+
+// declara, constrói e inicializa duas vetores de 5 inteiros cada
+int a[] = {5, 2, 9, 5, 7};
+int b[] = {2, 6, 10, 3, 3};
+Escreva um programa Java GUI ou console que cria uma terceira vetor de 5 inteiros e atribua a cada elemento desta vetor a soma dos elementos correspondentes nas duas vetores anteriores. Sua saída deverá ser algo parecido com: 
+
+Valores na vetor a: 5   2   9   5   7   
+Valores na vetor b: 2   6   10   3   3   
+Valores na vetor c: 7   8   19   8   10
