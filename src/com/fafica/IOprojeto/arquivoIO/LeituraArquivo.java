@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class LeituraArquivo {
 
 	Path path = Paths
-			.get("C:/Users/Alternativo8/git/organizar/src/com/fafica/IOprojeto/txt/cidades.txt");
+			.get("C:/Users/danilo/git/organizar/src/com/fafica/IOprojeto/txt/cid.txt");
 	Charset utf8 = StandardCharsets.UTF_8;
 
 	public String[] leitura( ) throws IOException {
@@ -28,7 +28,6 @@ public class LeituraArquivo {
 			String linha = null;
 			while ((linha = ler.readLine())!= null ) {
 			
-				System.out.println("cheguei aqui");
 
 			String dado = linha;
 			

@@ -69,6 +69,17 @@ public class JFCidades extends JFrame {
 		});
 
 		JButton btnOrdenar = new JButton("Ordenar");
+		btnOrdenar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				try {
+					ordenador();
+					listar(ordenador());
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		});
 
 		JButton btnListaEncadeada = new JButton("Lista Encadeada");
 		btnListaEncadeada.addActionListener(new ActionListener() {
