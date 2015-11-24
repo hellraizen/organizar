@@ -11,13 +11,15 @@ import java.nio.file.Paths;
 
 public class LeituraArquivo {
 
-	Path path = Paths
-			.get("/home/hellraizen/workspace/com.fafica.IOprojeto/src/com/fafica/IOprojeto/txt/vetores_alunos (1).txt");
+	Path path; 
+			
 	Charset utf8 = StandardCharsets.UTF_8;
 
-	public String[] leitura() throws IOException {
+	public String[] leitura(String caminho ) throws IOException {
+		
+		path =  Paths.get(caminho);
 		int contador = 0;
-		String[] dados = new String[contador];
+		String[] dados ;
 
 		try (BufferedReader ler = Files.newBufferedReader(path, utf8)) {
 
@@ -29,11 +31,12 @@ public class LeituraArquivo {
 				contador++;
 
 			}
+			
 			System.out.println(contador);
-
+		dados = new String[contador];
 			while ((linha1 = ler.readLine()) != null) {
 
-				dados[index++] = linha1;
+			 dados[index++] = linha1;
 
 			}
 		}
